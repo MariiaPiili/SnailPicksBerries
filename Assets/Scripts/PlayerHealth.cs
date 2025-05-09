@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject GameOverText;
 
     public Button RestartButton;
+    public Button MenuButton;
 
     public Transform HealthContainer;
     //public HorizontalLayoutGroup HorizontalLayoutGroup;
@@ -53,6 +54,7 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject);
             GameOverText.SetActive(true);
             RestartButton.gameObject.SetActive(true);
+            MenuButton.gameObject.SetActive(true);
         }
 
     }

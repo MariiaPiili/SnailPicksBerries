@@ -12,6 +12,18 @@ public class BerryDamage : MonoBehaviour
             Destroy(gameObject);
 
         }
+    }
 
+    private void Update()
+    {
+        DestroyBerryDamage();
+    }
+
+    private void DestroyBerryDamage()
+    {
+        if(transform.position.y < -4.5f)
+        {
+            Destroy(gameObject);
+        }
     }
 }
